@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `null`;
+
+exports[`renders correctly when there is a single item 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root card css-bhp9pd-MuiPaper-root-MuiCard-root"
+>
+  <img
+    alt="Antenna Morty"
+    className="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+    height="250"
+    src="https://rickandmortyapi.com/api/character/avatar/18.jpeg"
+  />
+  <div
+    className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1 css-1d9ye53-MuiTypography-root"
+    >
+      <strong>
+        Name:
+      </strong>
+       
+      Antenna Morty
+    </p>
+    <p
+      className="MuiTypography-root MuiTypography-body1 css-1d9ye53-MuiTypography-root"
+    >
+      <strong>
+        Gender:
+      </strong>
+       
+      Male
+    </p>
+    <p
+      className="MuiTypography-root MuiTypography-body1 css-1d9ye53-MuiTypography-root"
+    >
+      <strong>
+        Location:
+      </strong>
+       
+      Citadel of Ricks
+    </p>
+    <p
+      className="MuiTypography-root MuiTypography-body1 css-1d9ye53-MuiTypography-root"
+    >
+      <strong>
+        Origin:
+      </strong>
+       
+      unknown
+    </p>
+    <p
+      className="MuiTypography-root MuiTypography-body1 css-1d9ye53-MuiTypography-root"
+    >
+      <strong>
+        Species:
+      </strong>
+       
+      Human
+    </p>
+    <p
+      className="MuiTypography-root MuiTypography-body1 css-1d9ye53-MuiTypography-root"
+    >
+      <strong>
+        Status:
+      </strong>
+       
+      Alive
+    </p>
+    <p
+      className="MuiTypography-root MuiTypography-body1 css-1d9ye53-MuiTypography-root"
+    >
+      <strong>
+        Episodes:
+      </strong>
+       
+      Close Rick-counters of the Rick Kind,The Ricklantis Mixup
+    </p>
+  </div>
+</div>
+`;

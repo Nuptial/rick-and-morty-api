@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `null`;
+
+exports[`renders correctly when there is a single item 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 MuiGrid-grid-sm-4 MuiGrid-grid-md-2 css-13i4rnv-MuiGrid-root"
+>
+  <div
+    className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+    onClick={[Function]}
+    style={
+      Object {
+        "boxShadow": "0 8px 40px -12px rgba(0,0,0,0.3)",
+        "cursor": "pointer",
+      }
+    }
+  >
+    <button
+      className="MuiButtonBase-root MuiCardActionArea-root css-b6lsxj-MuiButtonBase-root-MuiCardActionArea-root"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <img
+        alt="Antenna Morty"
+        className="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+        height="250"
+        src="https://rickandmortyapi.com/api/character/avatar/18.jpeg"
+      />
+      <div
+        className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter character-name css-1uwgr7b-MuiTypography-root"
+        >
+          Antenna Morty
+        </p>
+      </div>
+      <span
+        className="MuiCardActionArea-focusHighlight css-1v2exvi-MuiCardActionArea-focusHighlight"
+      />
+    </button>
+  </div>
+</div>
+`;

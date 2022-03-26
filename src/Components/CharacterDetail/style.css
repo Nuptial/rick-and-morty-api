@@ -1,0 +1,11 @@
+.card {
+  box-shadow: 0 8px 40px -12px rgba(0, 0, 0, 0.3) !important;
+  max-width: 420px;
+}
+
+.link {
+  color: #379683;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
