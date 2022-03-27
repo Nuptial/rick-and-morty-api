@@ -1,15 +1,10 @@
-import Listing from "./Pages/Listing";
-import Detail from "./Pages/Detail";
-import NotFound from './Pages/NotFound';
-import "./App.css";
-import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+import Listing from "./containers/Listing";
+import Detail from "./containers/Detail";
+import NotFound from './containers/NotFound';
+import { ApolloProvider } from "@apollo/client";
 import { Routes, Route } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-const client = new ApolloClient({
-  uri: "https://rickandmortyapi.com/graphql",
-  cache: new InMemoryCache(),
-});
+import { client } from './api/services/RickAndMorty';
 
 const theme = createTheme({
   palette: {

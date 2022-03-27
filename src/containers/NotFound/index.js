@@ -1,23 +1,17 @@
-import { Typography, Grid } from "@mui/material";
+import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import CenterGrid from "../../components/CenterGrid";
 
 const NotFound = () => {
   return (
-    <Grid
-      container
-      spacing={0}
-      direction="column"
-      alignItems="center"
-      justifyContent="center"
-      style={{ minHeight: "100vh" }}
-    >
+    <CenterGrid>
       <Typography variant="h2" color="primary">
         404 Not Found
       </Typography>
       <p>
         <Link to="/">Go to the home page</Link>
       </p>
-    </Grid>
+    </CenterGrid>
   );
 };
 

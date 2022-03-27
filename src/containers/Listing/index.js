@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { gql, useQuery } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { Grid, Box, Typography, Pagination, Stack } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import ListingCard from "../../Components/ListingCard";
+import ListingCard from "../../components/ListingCard";
 import "./style.css";
-import Loading from "../../Components/Loading";
-import Error from "../../Components/Error";
+import Loading from "../../components/Loading";
+import Error from "../../components/Error";
+import { GET_CHARACTERS } from "../../api/query/RickAndMorty";
 
 const useStyles = makeStyles(() => ({
   ul: {
@@ -18,31 +19,11 @@ const useStyles = makeStyles(() => ({
 const Listing = () => {
   const classes = useStyles();
   const [page, setPage] = useState(
-    sessionStorage.getItem("activePage") ? Number(sessionStorage.getItem("activePage")) : 1
+    sessionStorage.getItem("activePage")
+      ? Number(sessionStorage.getItem("activePage"))
+      : 1
   );
-  const GET_CHARACTERS = gql`
-    query {
-      characters(page: ${page}) {
-        info {
-          count
-        }
-        results {
-          name
-          image
-          id
-        }
-      }
-    }
-  `;
-  const { loading, error, data } = useQuery(GET_CHARACTERS);
-
-  if (loading) {
-    return <Loading />;
-  }
-
-  if (error) {
-    return <Error />;
-  }
+  const { loading, error, data } = useQuery(GET_CHARACTERS(page));
 
   const renderList = () => {
     return data.characters.results.map((character) => {
@@ -51,6 +32,14 @@ const Listing = () => {
       );
     });
   };
+
+  if (loading) {
+    return <Loading />;
+  }
+
+  if (error) {
+    return <Error />;
+  }
 
   return (
     <>
