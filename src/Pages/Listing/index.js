@@ -18,7 +18,7 @@ const useStyles = makeStyles(() => ({
 const Listing = () => {
   const classes = useStyles();
   const [page, setPage] = useState(
-    Number(sessionStorage.getItem("activePage")) ?? 1
+    sessionStorage.getItem("activePage") ? Number(sessionStorage.getItem("activePage")) : 1
   );
   const GET_CHARACTERS = gql`
     query {
