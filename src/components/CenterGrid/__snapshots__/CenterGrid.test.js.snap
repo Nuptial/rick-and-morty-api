@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column css-l6hioc-MuiGrid-root"
+  style={
+    Object {
+      "minHeight": "100vh",
+    }
+  }
+/>
+`;
